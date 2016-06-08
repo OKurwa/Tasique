@@ -81,7 +81,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)packages\freeglut.2.8.1.15\build\native\include;$(SolutionDir)packages\glew.1.9.0.1\build\native\include;$(SolutionDir)packages\glfw.3.1.2\build\native\include;$(SolutionDir)packages\glm.0.9.7.1\build\native\include;$(IncludePath)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)packages\freeglut.2.8.1.15\build\native\include;$(SolutionDir)packages\glew.1.9.0.1\build\native\include;$(SolutionDir)packages\glfw.3.1.2\build\native\include;$(SolutionDir)packages\glm.0.9.7.1\build\native\include;$(IncludePath)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\Users\werman\Desktop\GLtry\GLtry\packages\freeglut.2.8.1.15\build\native\lib\v110\Win32\Release\dynamic;C:\Users\werman\Desktop\GLtry\GLtry\packages\glew.1.9.0.1\build\native\lib\v110\Win32\Release\dynamic;C:\Users\werman\Desktop\GLtry\GLtry\packages\glfw.3.1.2\build\native\lib\v140\Win32\dynamic;C:\Users\werman\Desktop\GLtry\GLtry\packages\boost.1.60.0.0\build;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -102,7 +103,8 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)packages\freeglut.2.8.1.15\build\native\include;$(SolutionDir)packages\glew.1.9.0.1\build\native\include;$(SolutionDir)packages\glfw.3.1.2\build\native\include;$(SolutionDir)packages\glm.0.9.7.1\build\native\include;$(IncludePath)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)packages\freeglut.2.8.1.15\build\native\include;$(SolutionDir)packages\glew.1.9.0.1\build\native\include;$(SolutionDir)packages\glfw.3.1.2\build\native\include;$(SolutionDir)packages\glm.0.9.7.1\build\native\include;$(IncludePath)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -128,10 +130,24 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\common\FPoint.cpp" />
+    <ClCompile Include="..\src\common\FPoint3D.cpp" />
+    <ClCompile Include="..\src\common\FRect.cpp" />
+    <ClCompile Include="..\src\common\IPoint.cpp" />
+    <ClCompile Include="..\src\common\IPoint3D.cpp" />
+    <ClCompile Include="..\src\common\IRect.cpp" />
     <ClCompile Include="..\src\Launcher.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\common\common.h" />
+    <ClInclude Include="..\src\common\FPoint.h" />
+    <ClInclude Include="..\src\common\FPoint3D.h" />
+    <ClInclude Include="..\src\common\FRect.h" />
+    <ClInclude Include="..\src\common\IPoint.h" />
+    <ClInclude Include="..\src\common\IPoint3D.h" />
+    <ClInclude Include="..\src\common\IRect.h" />
     <ClInclude Include="..\src\Launcher.h" />
+    <ClInclude Include="..\src\stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

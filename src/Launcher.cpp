@@ -1,4 +1,5 @@
-﻿#include "Launcher.h"
+﻿#include "stdafx.h"
+#include "Launcher.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
