@@ -1,5 +1,6 @@
 ﻿#include "stdafx.h"
 #include "FPoint3D.h"
+#include "IPoint3D.h"
 FPoint3D::FPoint3D()
 {
 }
